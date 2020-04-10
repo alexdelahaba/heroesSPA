@@ -64,17 +64,32 @@ export class HeroesService {
     },
   ];
 
-  constructor() {
-
-  }
+  constructor() {}
 
   getHeroes(): Heroe[] {
     return this.heroes;
   }
 
-  getHeroe(i: number){
+  getHeroe(i: number) {
     return this.heroes[i];
   }
 
+  buscarHeroes(texto: string){
+    let heroesArr: Heroe[] = [];
+    texto = texto.toLowerCase();
+
+    for (let i = 0; i < this.heroes.length; i++) {
+      let heroe = this.heroes[i];
+
+      let nombre = heroe.nombre.toLowerCase();
+
+      if (nombre.indexOf(texto) >= 0) {
+        heroe.idx = i;
+        heroesArr.push(heroe);
+      }
+    }
+
+    return heroesArr;
+  }
 }
 
