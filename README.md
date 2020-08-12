@@ -5,7 +5,7 @@ This particular project is a SPA for learning.
 
 
 ### Installation 🔧
-The app can be used directly from this link: https://alexdelahaba.github.io/BookMarkApp/index.html
+The app can be used directly from this link: https://alexdelahaba.github.io/heroesSPA/
 It has been deployed thanks to Github pages.
 
 To be able to use the application you have to clone the repository to local and to run it:
